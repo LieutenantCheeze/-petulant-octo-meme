@@ -1,12 +1,97 @@
-*.class
+package learningjava;
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+import java.util.Scanner;
 
-# Package Files #
-*.jar
-*.war
-*.ear
+public class LearningJava 
+{
+
+    
+    public static void main( String[] args )
+    {
+        
+        Scanner keyboard = new Scanner( System.in );
+        
+           
+           int question1, question2, question3; //answers to questions
+           
+             System.out.println( "Welcome to my quiz!" );
+           
+                System.out.println( "Q1) What is the fourth planet from the Sun? " );
+           
+                    System.out.println( "     1) Jupiter" );
+                    System.out.println( "     2) Mars" );
+                    System.out.println( "     3) Paris" );
+           
+                     question1 = keyboard.nextInt();
+           
+                       if ( question1 == 2 ) 
+                         {
+               
+                             System.out.println( "Correct! +1 point." );
+               
+                         }
+                      else 
+                         {
+               
+                             System.out.println( "Sorry, that is incorrect." );
+               
+                         }
+           
+                 
+                System.out.println( "Q2) Which of these animals has a trunk?" );
+           
+                    System.out.println( "    1) Elephant" );
+                    System.out.println( "    2) Mouse" );
+                    System.out.println( "    3) Spider" );
+           
+                     question2 = keyboard.nextInt();
+                       if ( question2 == 1 ) 
+                         {
+                         
+                             System.out.println( "Correct! +1 point" );
+                         
+                         }
+                       else 
+                         {
+                         
+                             System.out.println( "Sorry, that is incorrect " );
+                         
+                         }
+                       
+                 System.out.println( "Q3) How many fingers am I holding up?" );
+                 
+                    System.out.println( "    1) 2" );
+                    System.out.println( "    2) 12" );
+                    System.out.println( "    3) I'm not an idiot! I know my times tables!" );
+                    
+                      question3 = keyboard.nextInt();
+                        if ( question3 == 1 ) 
+                          {
+                          
+                              System.out.println( "You are an idiot. Please don't breed." );
+                          
+                          }
+                        else if ( question3 == 2 )
+                          {
+                          
+                              System.out.println( "You are an idiot. Please don't breed." );
+                          
+                          }
+                        else if ( question3 == 3 )
+                          {
+                          
+                              System.out.println( "Congratulations, you the dumbest person on the planet." );
+                          
+                          }
+                        else 
+                          {
+                          
+                              System.out.println( "Good job! you outsmarted a computer! That was a trick question, and you passed it." );
+                          
+                          }
+    }
+    
+}
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
